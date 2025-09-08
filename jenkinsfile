@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage("checkout"){
+            steps {
+                echo "fetching the code form github"
+            }
+        }
+        stage("build stage"){
+            steps {
+                echo "building the code"
+            }
+        }
+    }
+}
